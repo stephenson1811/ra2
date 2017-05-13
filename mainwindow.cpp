@@ -23,6 +23,7 @@ MainWindow::MainWindow(GameScene& ,QWidget *parent) :
     h->addWidget(w);
     h->addWidget(v);
     hl->addWidget(v);
+
     setLayout(hl);
 }
 
