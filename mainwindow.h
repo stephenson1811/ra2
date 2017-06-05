@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QFrame>
+#include <QDockWidget>
 #include "src/gui/EventListView.h"
 #include "src/gui/GameScene.h"
 #include "src/gui/GiantMapView.h"
@@ -23,6 +24,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QDockWidget* m_RightPanel;
     GameScene* m_GameScene;
     EventListView* m_EventListView;
     GiantMapView* m_GiantMapView;

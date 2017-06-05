@@ -4,12 +4,13 @@
 #include <QWidget>
 #include <QFrame>
 #include <QHBoxLayout>
-MainWindow::MainWindow(GameScene& ,QWidget *parent) :
+MainWindow::MainWindow(GameScene& scene,QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    m_GameScene;
+    m_GameScene = &scene;
+    m_RightPanel = new QDockWidget(this) ;m_RightPanel->setWidget();
     QHBoxLayout* hl = new QHBoxLayout(this);
     QSplitter* h = new QSplitter();
     QSplitter* v = new QSplitter();
